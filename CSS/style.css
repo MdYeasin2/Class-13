@@ -1,0 +1,92 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+     list-style-type:none;
+}
+/* common css End */
+
+
+.animation{
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid blue;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation-name: preloder;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes preloder{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.line_animation{
+    width: 400px;
+    margin: 100px auto;
+}
+
+
+.line_animation span{
+    display: inline-block;
+    width: 10px;
+    height: 200px;
+    background-color: blue;
+    margin: 0 20px;
+    animation-name: linepreloder;
+    animation-duration:2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.line_animation span:nth-child(1){
+    animation-delay: 0.2s;
+    background: purple;
+    
+}
+
+.line_animation span:nth-child(2){
+    animation-delay: 0.4s;
+    background: green;
+    
+}
+
+.line_animation span:nth-child(3){
+    animation-delay: 0.6s;
+    background: red;
+}
+
+.line_animation span:nth-child(4){
+    animation-delay:0.8s;
+    background: orange;
+}
+
+.line_animation span:nth-child(5){
+    animation-delay:1s;
+    background:blue;
+
+}
+@keyframes linepreloder {
+    from{
+        transform: scaleY(1);
+
+    }
+    to{
+        transform: scaleY(0);
+    }
+}
